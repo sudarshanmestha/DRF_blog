@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRF_beginners</title>
+    <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+    <div class="form">
+      <form method="POST" id="postForm">
+        {% csrf_token %}
+
+        <input style="color: black;" type="text" id="title" placeholder="title"/>
+        <input style="color: black;" type="text" id="content" placeholder="content"/>
+        <input style="color: black;" type="text" id="author" placeholder="author"/>
+        <button type="submit">Update</button> 
+      </form>
+    </div>
+    <a href="/"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+     << Back to blog
+    </button></a>
+    <div id="root"></div>
+    <script src="{% static 'js/detail.js' %}"></script>
+</body>
+</html>

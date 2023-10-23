@@ -1,0 +1,23 @@
+body {
+    background-color: #1f1c1c; /* Light gray background color */
+    color: #ffffff; 
+}
+
+.post-item {
+    position: relative;
+    box-shadow: 0 8px 16px 0 rgba(117, 114, 114, 0.911);
+    width: 300px;
+    transition: 0.3s;
+    padding: 10px;
+    color: rgb(252, 252, 252);
+    
+}
+.post-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(248, 244, 244, 0.952);
+
+}
+.post-delete-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
